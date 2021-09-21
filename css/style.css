@@ -1,0 +1,378 @@
+/**********************************************************************
+* リセットCSS
+************************************************************************/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+img {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+a {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+/****************************************************************************************************
+* フォント設定
+***************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+.ja{
+	font-family: 'Kaisei Decol', serif;
+}
+.en{
+  font-family: 'Architects Daughter', cursive;
+}
+.en2{
+  font-family: 'Cookie', cursive;
+}
+/******************************************************************************************
+* ヘッダー
+*******************************************************************************************/
+header{
+  display:flex;
+  width:100%;
+  position:relative;
+  height:80px;
+  background-color:white;
+  display:none;
+}
+.fixed{
+  display:block;
+  position:fixed;
+  z-index:50;
+}
+.head-menu{
+  margin-top:20px;
+  margin-left:80px;
+}
+.menu-btn{
+  position:absolute;
+  right:5%;
+  top:20px;
+  z-index:80;
+}
+.menu-btn2{
+  display:block;
+  position:absolute;
+  right:5%;
+  top:20px;
+  position:fixed;
+  z-index:80;
+}
+.none{
+  display:none;
+}
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn7{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  cursor: pointer;
+  width: 80px;
+  height:50px;
+  border-radius: 5px;
+}
+/*ボタン内側*/
+.openbtn7 .openbtn-area{
+  transition: all .4s;
+}
+.openbtn7 span{
+  display: inline-block;
+  transition: all .4s;/*アニメーションの設定*/
+  position: absolute;
+  left: 14px;
+  height: 2px;
+  border-radius: 2px;
+  background: black;
+  width: 45%;
+}
+.openbtn72 span{
+  background-color: white;
+}
+.menu-btn-color{
+  background-color: black;
+}
+.openbtn7 span:nth-of-type(1) {
+  top:15px; 
+}
+.openbtn7 span:nth-of-type(2) {
+  top:23px;
+}
+.openbtn7 span:nth-of-type(3) {
+  top:31px;
+}
+/*activeクラスが付与されると線と周りのエリアが回転して×になる*/
+.openbtn7.active .openbtn-area{
+  transform: rotateY(-360deg);
+}
+.openbtn7.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-135deg);
+  width: 30%;
+}
+.openbtn7.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.openbtn7.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(135deg);
+  width: 30%;
+}
+
+@media screen and (max-width:480px){
+ 
+}
+/****************************************************************************
+* modal トップページ
+*****************************************************************************/
+.modal{
+  width:100%;
+  height:100px;
+  display:flex;
+  position:relative;
+  display:none;
+  z-index:70;
+  position:fixed;
+  background-color:white;
+}
+.modal-open{
+  display:block;
+}
+.modal-title{
+  margin-top:25px;
+  margin-left:100px;
+}
+.modal-title1{
+  font-size:16px;
+}
+.modal-title2{
+  font-size:24px;
+  padding-left:5px;
+}
+.modal-menu{
+  position:absolute;
+  top:35px;
+  right:200px;
+  display:flex;
+}
+.modal-menu-about{
+  margin-left:50px;
+}
+.modal-menu-blog{
+  margin-left:50px;
+}
+/*****************************************************************************
+* first トップページ
+******************************************************************************/
+.first{
+  position:relative;
+}
+.main{
+  position:absolute;
+  top:300px;
+  left:40%;
+}
+.main1{
+  font-size:50px;
+  color:white;
+}
+.main2{
+  font-size:35px;
+  text-align:center;
+  color:white;
+}
+/****************************************************************************************
+* jpg-all トップページ
+*****************************************************************************************/
+.jpg-all{
+  width:95%;
+  margin:0 auto;
+  margin-top:30px;
+  position:relative;
+}
+.jpg p{
+  font-size:16px;
+}
+.jpg4{
+  width:32%;
+}
+.jpg5{
+  position:absolute;
+  top:0px;
+  left:435px;
+  width:32%;
+}
+.jpg6{
+  position:absolute;
+  top:0px;
+  right:0px;
+  width:32%;
+}
+.jpg8{
+  position:absolute;
+  top:350px;
+  left:0px;
+  width:32%;
+}
+.jpg7{
+  position:absolute;
+  top:490px;
+  left:435px;
+  width:32%;
+}
+.jpg9{
+  position:absolute;
+  top:350px;
+  right:0px;
+  width:32%;
+}
+.jpg10{
+  position:absolute;
+  top:950px;
+  left:0px;
+  width:32%;
+}
+.jpg11{
+  position:absolute;
+  top:850px;
+  left:435px;
+  width:32%;
+}
+.jpg12{
+  position:absolute;
+  top:1050px;
+  right:0px;
+  width:32%;
+}
+.jpg13{
+  position:absolute;
+  top:1350px;
+  left:0px;
+  width:32%;
+}
+.jpg14{
+  position:absolute;
+  top:1210px;
+  left:435px;
+  width:32%;
+}
+.jpg15{
+  position:absolute;
+  top:1420px;
+  right:0px;
+  width:32%;
+}
+.jpg16{
+  position:absolute;
+  top:1850px;
+  left:0px;
+  width:32%;
+}
+.jpg17{
+  position:absolute;
+  top:1800px;
+  left:435px;
+  width:32%;
+}
+.jpg18{
+  position:absolute;
+  top:1780px;
+  right:0px;
+  width:32%;
+}
+.jpg20{
+  position:absolute;
+  top:1600px;
+  left:435px;
+  width:32%;
+}
+/***************************************************************************************************
+* footer トップページ
+******************************************************************************************************/
+footer{
+  padding-top:2150px;
+}
+.footer-inner{
+  background-color:black;
+  height:450px;
+}
+.foot-main{
+  color:white;
+  text-align:center;
+  padding-top:80px;
+  font-weight:bold;
+  font-size:20px;
+}
+.form{
+  color:white;
+  width:300px;
+  margin:0 auto;
+  border:solid 1px white;
+  padding: 10px 30px 10px 30px;
+  text-align:center;
+  margin-top:80px;
+  border-radius:10px;
+}
+.form:hover{
+  color:black;
+  background-color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+.foot-last{
+  width:90%;
+  margin:0 auto;
+  margin-top:70px;
+  border-top:solid 0.5px #808080;
+  position:relative;
+}
+.foot-title{
+  width:500px;
+  border-right:solid 0.5px #808080;
+}
+.foot-title1{
+  padding-top:30px;
+  padding-left:150px;
+  color:#808080;
+  font-size:18px;
+}
+.foot-title2{
+  padding-left:150px;
+  color:#808080;
+  font-size:24px;
+}
+.address{
+  position:absolute;
+  top:30px;
+  right:150px;
+  color:#808080;
+  font-size:12px;
+}
