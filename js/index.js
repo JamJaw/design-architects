@@ -40,7 +40,7 @@ $(function(){
     $(".modal").toggleClass('modal-open');
     });
      $(".menu-btn").click(function () {
-    $(".opentbn72 span").toggleClass('menu-btn-color');
+    $(".openbtn72").toggleClass('menu-btn-color');
     });
 
 
