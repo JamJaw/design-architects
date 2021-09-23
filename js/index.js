@@ -28,17 +28,22 @@ $(function(){
     //scrollしたとき
     $(window).on('scroll', function () {
     //現在の位置が200pxより大きいかつ、クラスfixedが付与されていない（false）時
-    if($(this).scrollTop() > 660 && headNav.hasClass('none') == false) {
+    if($(this).scrollTop() > 660 && headNav.hasClass('menu-btn-color') == false) {
     //クラスfixedを付与
-    headNav.addClass('none');
+    headNav.addClass('menu-btn-color');
     }
     });
     });
 
     /* modal ************************************************************/
-     $(".menu-btn").click(function () {
-    $(".modal").toggleClass('modal-open');
+  
+    $(function(){
+        $('.menu-btn').on('click',function(){
+            $('.modal').fadeToggle();
+            return false;
+        });
     });
+    
      $(".menu-btn").click(function () {
     $(".openbtn72").toggleClass('menu-btn-color');
     });

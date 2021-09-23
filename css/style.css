@@ -77,6 +77,7 @@ header{
   position:absolute;
   right:5%;
   top:20px;
+  position:fixed;
   z-index:80;
 }
 .menu-btn2{
@@ -148,32 +149,17 @@ header{
 }
 
 @media screen and (max-width:480px){
-  header{
-    width:100%;
-    display:none;
-    border:solid 1px;
-  }
   .head-menu{
     margin-top:20px;
     margin-left:30px;
   }
   .menu-btn{
-    position:absolute;
     right:5%;
     top:15px;
-    z-index:80;
   }
   .menu-btn2{
-    display:block;
-    position:absolute;
     right:5%;
     top:15px;
-    position:fixed;
-    z-index:80;
-    border:solid 1px;
-  }
-  .none{
-    display:none;
   }
   /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
   .openbtn7{
@@ -199,6 +185,7 @@ header{
 }
 .modal-open{
   display:block;
+  transition:1s;
 }
 .modal-title{
   margin-top:25px;
@@ -225,32 +212,32 @@ header{
 }
 @media screen and (max-width:480px){
   .modal-title{
-    margin-top:25px;
-    margin-left:30px;
+    margin-top:40px;
+    margin-left:15px;
   }
   .modal-title1{
-    font-size:16px;
+    font-size:12px;
   }
   .modal-title2{
-    font-size:20px;
-    padding-left:5px;
+    font-size:16px;
+    padding-left:10px;
   }
   .modal-menu{
-    top:35px;
-    right:50px;
+    top:60px;
+    right:95px;
   }
   .modal-menu-works{
-    font-size:14px;
+    font-size:10px;
   }
   .modal-menu-works span{display:none;}
   .modal-menu-about{
-    margin-left:30px;
-    font-size:14px;
+    margin-left:10px;
+    font-size:10px;
   }
   .modal-menu-about span{display:none;}
   .modal-menu-blog{
-    margin-left:30px;
-    font-size:14px;
+    margin-left:10px;
+    font-size:10px;
   }
   .modal-menu-blog span{display:none;}
 }
@@ -259,6 +246,7 @@ header{
 ******************************************************************************/
 .first{
   position:relative;
+  width:100%;
 }
 .main{
   position:absolute;
@@ -398,18 +386,19 @@ header{
 @media screen and (max-width:480px){
   .jpg-all{
     margin-top:20px;
+    width:95%;
   }
   .jpg p{
     font-size:10px;
   }
   .jpg4{
-    width:46%;
+    width:47%;
   }
   .jpg5{
     position:absolute;
     top:0px;
-    right:0px;
-    width:46%;
+    left:50%;
+    width:47%;
   }
   .jpg6{
     position:absolute;
