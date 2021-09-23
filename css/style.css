@@ -148,7 +148,41 @@ header{
 }
 
 @media screen and (max-width:480px){
- 
+  header{
+    width:100%;
+    display:none;
+    border:solid 1px;
+  }
+  .head-menu{
+    margin-top:20px;
+    margin-left:30px;
+  }
+  .menu-btn{
+    position:absolute;
+    right:5%;
+    top:15px;
+    z-index:80;
+  }
+  .menu-btn2{
+    display:block;
+    position:absolute;
+    right:5%;
+    top:15px;
+    position:fixed;
+    z-index:80;
+    border:solid 1px;
+  }
+  .none{
+    display:none;
+  }
+  /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+  .openbtn7{
+    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    cursor: pointer;
+    width: 80px;
+    height:50px;
+    border-radius: 5px;
+  }
 }
 /****************************************************************************
 * modal トップページ
@@ -189,6 +223,37 @@ header{
 .modal-menu-blog{
   margin-left:50px;
 }
+@media screen and (max-width:480px){
+  .modal-title{
+    margin-top:25px;
+    margin-left:30px;
+  }
+  .modal-title1{
+    font-size:16px;
+  }
+  .modal-title2{
+    font-size:20px;
+    padding-left:5px;
+  }
+  .modal-menu{
+    top:35px;
+    right:50px;
+  }
+  .modal-menu-works{
+    font-size:14px;
+  }
+  .modal-menu-works span{display:none;}
+  .modal-menu-about{
+    margin-left:30px;
+    font-size:14px;
+  }
+  .modal-menu-about span{display:none;}
+  .modal-menu-blog{
+    margin-left:30px;
+    font-size:14px;
+  }
+  .modal-menu-blog span{display:none;}
+}
 /*****************************************************************************
 * first トップページ
 ******************************************************************************/
@@ -208,6 +273,22 @@ header{
   font-size:35px;
   text-align:center;
   color:white;
+}
+@media screen and (max-width:480px){
+  .main{
+    position:absolute;
+    top:80px;
+    left:35%;
+  }
+  .main1{
+    font-size:20px;
+    color:black;
+  }
+  .main2{
+    font-size:16px;
+    text-align:center;
+    color:black;
+  }
 }
 /****************************************************************************************
 * jpg-all トップページ
@@ -314,6 +395,107 @@ header{
   left:435px;
   width:32%;
 }
+@media screen and (max-width:480px){
+  .jpg-all{
+    margin-top:20px;
+  }
+  .jpg p{
+    font-size:10px;
+  }
+  .jpg4{
+    width:46%;
+  }
+  .jpg5{
+    position:absolute;
+    top:0px;
+    right:0px;
+    width:46%;
+  }
+  .jpg6{
+    position:absolute;
+    top:100px;
+    right:0px;
+    width:32%;
+  }
+  .jpg8{
+    position:absolute;
+    top:350px;
+    left:0px;
+    width:32%;
+  }
+  .jpg7{
+    position:absolute;
+    top:490px;
+    left:180px;
+    width:32%;
+  }
+  .jpg9{
+    position:absolute;
+    top:350px;
+    right:0px;
+    width:32%;
+  }
+  .jpg10{
+    position:absolute;
+    top:950px;
+    left:0px;
+    width:32%;
+  }
+  .jpg11{
+    position:absolute;
+    top:850px;
+    left:180px;
+    width:32%;
+  }
+  .jpg12{
+    position:absolute;
+    top:1050px;
+    right:0px;
+    width:32%;
+  }
+  .jpg13{
+    position:absolute;
+    top:1350px;
+    left:0px;
+    width:32%;
+  }
+  .jpg14{
+    position:absolute;
+    top:1210px;
+    left:180px;
+    width:32%;
+  }
+  .jpg15{
+    position:absolute;
+    top:1420px;
+    right:0px;
+    width:32%;
+  }
+  .jpg16{
+    position:absolute;
+    top:1850px;
+    left:0px;
+    width:32%;
+  }
+  .jpg17{
+    position:absolute;
+    top:1800px;
+    left:180px;
+    width:32%;
+  }
+  .jpg18{
+    position:absolute;
+    top:1780px;
+    right:0px;
+    width:32%;
+  }
+  .jpg20{
+    position:absolute;
+    top:1600px;
+    left:180px;
+    width:32%;
+  } 
+}
 /***************************************************************************************************
 * footer トップページ
 ******************************************************************************************************/
@@ -375,4 +557,49 @@ footer{
   right:150px;
   color:#808080;
   font-size:12px;
+}
+@media screen and (max-width:480px){
+  footer{
+    padding-top:2150px;
+  }
+  .footer-inner{
+    height:650px;
+  }
+  .foot-main{
+    width:90%;
+    margin:0 auto;
+  }
+  .form{
+    width:250px;
+    padding: 15px 30px 15px 30px;
+    margin-top:50px;
+  }
+  .foot-last{
+    width:90%;
+    margin:0 auto;
+    margin-top:70px;
+    border-top:solid 0.5px #808080;
+    border-bottom:solid 0.5px #808080;
+    position:relative;
+  }
+  .foot-title{
+    width:90%;
+    border-right:none;
+  }
+  .foot-title1{
+    padding-top:30px;
+    padding-left:80px;
+  }
+  .foot-title2{
+    padding-left:100px;
+    padding-bottom:20px;
+  }
+  .address{
+    position:absolute;
+    top:150px;
+    right:30px;
+    left:30px;
+    color:#808080;
+    font-size:12px;
+  }
 }
