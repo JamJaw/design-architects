@@ -248,6 +248,9 @@ header{
   position:relative;
   width:100%;
 }
+#first-sp{
+  display:none;
+}
 .main{
   position:absolute;
   top:300px;
@@ -263,19 +266,25 @@ header{
   color:white;
 }
 @media screen and (max-width:480px){
+  #first-pc{
+    display:none;
+  }
+  #first-sp{
+    display:block;
+  }
   .main{
     position:absolute;
-    top:80px;
-    left:35%;
+    top:250px;
+    left:25%;
   }
   .main1{
-    font-size:20px;
-    color:black;
+    font-size:28px;
+    color:white;
   }
   .main2{
-    font-size:16px;
+    font-size:24px;
     text-align:center;
-    color:black;
+    color:white;
   }
 }
 /****************************************************************************************
@@ -452,87 +461,87 @@ header{
   }
   .jpg6{
     position:absolute;
-    top:100px;
-    right:0px;
-    width:32%;
+    top:165px;
+    left:0px;
+    width:46%;
   }
   .jpg8{
     position:absolute;
-    top:350px;
-    left:0px;
-    width:32%;
+    top:220px;
+    left:50%;
+    width:46%;
   }
   .jpg7{
     position:absolute;
-    top:490px;
-    left:180px;
-    width:32%;
+    top:480px;
+    left:50%;
+    width:46%;
   }
   .jpg9{
     position:absolute;
-    top:350px;
-    right:0px;
-    width:32%;
+    top:330px;
+    left:0px;
+    width:46%;
   }
   .jpg10{
     position:absolute;
-    top:950px;
-    left:0px;
-    width:32%;
+    top:815px;
+    left:50%;
+    width:46%;
   }
   .jpg11{
     position:absolute;
-    top:850px;
-    left:180px;
-    width:32%;
+    top:650px;
+    left:50%;
+    width:46%;
   }
   .jpg12{
     position:absolute;
-    top:1050px;
-    right:0px;
-    width:32%;
+    top:635px;
+    left:0px;
+    width:46%;
   }
   .jpg13{
     position:absolute;
-    top:1350px;
+    top:795px;
     left:0px;
-    width:32%;
+    width:46%;
   }
   .jpg14{
     position:absolute;
-    top:1210px;
-    left:180px;
-    width:32%;
+    top:1000px;
+    left:50%;
+    width:46%;
   }
   .jpg15{
     position:absolute;
-    top:1420px;
-    right:0px;
-    width:32%;
+    top:1180px;
+    left:50%;
+    width:46%;
   }
   .jpg16{
     position:absolute;
-    top:1850px;
+    top:1350px;
     left:0px;
-    width:32%;
+    width:46%;
   }
   .jpg17{
     position:absolute;
-    top:1800px;
-    left:180px;
-    width:32%;
+    top:1290px;
+    left:0px;
+    width:46%;
   }
   .jpg18{
     position:absolute;
-    top:1780px;
-    right:0px;
-    width:32%;
+    top:1010px;
+    left:0px;
+    width:46%
   }
   .jpg20{
     position:absolute;
-    top:1600px;
-    left:180px;
-    width:32%;
+    top:1345px;
+    left:50%;
+    width:46%;
   } 
 }
 /***************************************************************************************************
@@ -599,7 +608,7 @@ footer{
 }
 @media screen and (max-width:480px){
   footer{
-    padding-top:2150px;
+    padding-top:1500px;
   }
   .footer-inner{
     height:650px;
